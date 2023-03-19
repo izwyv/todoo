@@ -3,4 +3,15 @@ body  {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+h1 {
+  padding: 50px;
+  font-size: 40px;
+}
+h3, form {
+  padding: 2px 140px;
+  font-size: 25px;
+}
+h4, p {
+  font-family: "Brush Script MT", "lucida Handwriting", Cursive;
+  font-size: 15px;
+}
