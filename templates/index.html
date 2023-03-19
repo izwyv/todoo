@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>todoo</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
+    <h1>welcome to todoo !</h1>
+  </head>
+  <body>
+    <header>
+      <h3>To-do list</h3>
+    </header>
+    <form method="POST">
+      <input type="text" name="task" placeholder="Add a task...">
+      <button type="submit" name="action" value="add">Add Task</button>
+    </form>
+    <ul>
+      {% for task, checked in task_status_pairs %}
+        <li>
+          <form method="POST">
+            <input type="checkbox" name="task_index" value="{{ loop.index0 }}" {% if checked %}checked{% endif %}>
+            {{ task }}
+            <button type="submit" name="action" value="delete">Delete</button>
+          </form>
+        </li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
+
+
