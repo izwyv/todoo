@@ -5,13 +5,13 @@ body  {
 }
 h1 {
   padding: 50px;
-  font-size: 40px;
+  font-size: 2.5em;
 }
 h3, form {
   padding: 2px 140px;
-  font-size: 25px;
+  font-size: 1.5625em;
 }
 h4, p {
   font-family: "Brush Script MT", "lucida Handwriting", Cursive;
-  font-size: 15px;
+  font-size: 0.9375em;
 }
